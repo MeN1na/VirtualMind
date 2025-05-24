@@ -1,66 +1,73 @@
-VirtualMind
-Overview
-VirtualMind is a sophisticated web-based platform designed to deliver personalized mentoring for physical and mental well-being. Powered by cutting-edge AI technologies, the application analyzes comprehensive health metrics and emotional data to provide tailored recommendations and insights, enhancing user health outcomes.
-Key Features
+# 🧠 VirtualMind - AI-Powered Health Mentoring Platform
 
-Physical Mentoring: Integrates a state-of-the-art API from Groq, featuring an LLMA model, to evaluate temperature, blood pressure, heart rate, blood sugar levels, daily exercise routines, and dietary habits, offering precise and actionable health advice.
-Mental Mentoring: Employs a proprietary logistic regression model to analyze daily diary entries, enabling accurate emotion detection and longitudinal mood tracking for improved mental health awareness.
+<div align="center">
+  <img src="frontend/assets/xv.png" alt="VirtualMind Logo" width="200"/>
 
-Technical Stack
+  [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+  [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+  [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+  [![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  [![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+</div>
 
-Front-end: HTML, CSS
-Back-end: Node.js
-Model Development: Python (logistic regression)
+---
 
-Prerequisites
+## 📑 Table of Contents
+- [📖 Overview](#-overview)
+- [✨ Features](#-features)
+- [🛠 Technical Stack](#-technical-stack)
+- [👩‍💻 Project Team](#-project-team)
+- [🕒 Last Updated](#-last-updated)
 
-Node.js (latest stable release)
-Python 3.x (recommended version 3.9 or higher)
+---
 
-Installation and Setup
-Clone the Repository
-git clone https://github.com/MeN1na/VirtualMind.git
-cd VirtualMind
+## 📖 Overview
 
-Install Backend Dependencies
+**VirtualMind** is a sophisticated web-based platform designed to deliver personalized mentoring for physical and mental well-being. Powered by cutting-edge AI technologies, the application analyzes comprehensive health metrics and emotional data to provide tailored recommendations and insights, enhancing user health outcomes.
 
-Navigate to the backend directory:cd backend
-npm install
+---
 
+## ✨ Features
 
+### 🏃‍♂️ Physical Mentoring
+- Uses Groq's state-of-the-art API and LLMA model.
+- Analyzes:
+  - Temperature
+  - Blood pressure
+  - Heart rate
+  - Blood sugar levels
+  - Daily exercise routines
+  - Dietary habits
+- Delivers precise, actionable health advice.
 
-Configure Python Environment
+### 🧘 Mental Mentoring
+- Utilizes a custom logistic regression model.
+- Analyzes:
+  - Daily diary entries
+  - Emotion detection
+  - Mood tracking over time
+- Enhances emotional awareness and mental health monitoring.
 
-Create a virtual environment:python -m venv venv
+---
 
+## 🛠 Technical Stack
 
-Activate the virtual environment:
-Windows: venv\Scripts\activate
-Unix/MacOS: source venv/bin/activate
+### 💻 Frontend
+- HTML
+- CSS
 
+### 🧠 Model Development
+- Python (Logistic Regression)
 
-Install required Python packages from requirements.txt:pip install -r requirements.txt
+### 🌐 Backend
+- Node.js
 
+---
+### 👩‍💻 Project Team
+👤 **[Amira Salah()]**
+👤 **[Raghad Hassona()]**
+👤 **[Rodina Hamza(Rodina-710)]**
+👤 **[Menna Selim(MeN1na)]**
 
-
-Launch the Application
-
-Initiate the Node.js server:node server.js
-
-
-Start the Python server:python server.py
-
-
-Access the application via http://localhost:3000
-
-Project Team
-
-Amira Salah
-Raghad Hassona
-Rodina Hamza
-Menna Selim
-
-Licensing
-This project is distributed under the MIT License. For full terms, refer to the LICENSE file.
-Last Updated
-May 24, 2025 (12:22 PM EEST)
+- Want to contribute? Feel free to fork the repo and submit a pull request! ❤️
+---
