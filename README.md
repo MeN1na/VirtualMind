@@ -18,21 +18,18 @@ Node.js (latest stable release)
 Python 3.x (recommended version 3.9 or higher)
 
 Installation and Setup
-
-Clone the Repository:
+Clone the Repository
 git clone https://github.com/MeN1na/VirtualMind.git
 cd VirtualMind
 
-
-Install Backend Dependencies:
+Install Backend Dependencies
 
 Navigate to the backend directory:cd backend
 npm install
 
 
 
-
-Configure Python Environment:
+Configure Python Environment
 
 Create a virtual environment:python -m venv venv
 
@@ -42,10 +39,11 @@ Windows: venv\Scripts\activate
 Unix/MacOS: source venv/bin/activate
 
 
-Install required Python packages from requirements.txt.
+Install required Python packages from requirements.txt:pip install -r requirements.txt
 
 
-Launch the Application:
+
+Launch the Application
 
 Initiate the Node.js server:node server.js
 
@@ -53,18 +51,16 @@ Initiate the Node.js server:node server.js
 Start the Python server:python server.py
 
 
-Access the application via http://localhost:3000 
-
+Access the application via http://localhost:3000
 
 Project Team
 
-Amira Salah 
-Raghad Hassona 
-Rodina Hamza 
-Menna Selim 
+Amira Salah
+Raghad Hassona
+Rodina Hamza
+Menna Selim
 
 Licensing
 This project is distributed under the MIT License. For full terms, refer to the LICENSE file.
-
 Last Updated
-May 24, 2025
+May 24, 2025 (12:22 PM EEST)
