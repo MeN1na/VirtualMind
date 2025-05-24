@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.env
+.venv/
+
+# Databases
+*.db
+*.sqlite
+
+# Pickle files
+*.pkl
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDE and Editor files
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+
+# API keys and sensitive data
+*.env
+
+# VirtualMind specific
+track_utils.cpython-313.pyc
+data(2).db
+emotion_classifier_pipe_*.pkl

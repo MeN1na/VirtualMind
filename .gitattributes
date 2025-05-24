@@ -1,0 +1,13 @@
+# Ensure text files use LF in the repository
+* text=auto eol=lf
+
+# Explicitly set specific file types
+*.js text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+
+# Treat binary files as binary (no line ending conversion)
+*.db binary
+*.pkl binary

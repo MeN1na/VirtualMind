@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Mental Monitoring</title>
+    <meta name="description" content="Daily thoughts"/>
+    <link rel="stylesheet" href="../styles/styler.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="../assets/xv.png" alt="Virtual Mind" class="logo">          
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Mental Monitoring</h1>
+            <p>Your key to a healthier life</p>
+        </section>
+
+        <section class="journal-section">
+            <div class="box">
+                <div class="quote-text">
+                    <h2>Welcome!</h2>
+                    Take a moment to reflect — your thoughts matter. 🌱
+                    <h2>~~~~~~~~~~</h2>
+                </div>
+                <div id="quoteMessage" class="quote-dynamic"></div>
+            </div>
+        
+            <div class="entry-section">
+                <div class="datetime" id="datetime"></div>
+                <textarea id="entry" placeholder="Spell The Tea..."></textarea>
+                <div class="buttons">
+                    <button onclick="viewState()">View State</button>
+                    <button onclick="viewAnalysis()">View Analysis</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about">
+            <div class="about-left">
+                <img src="https://cdn-icons-png.flaticon.com/512/3771/3771518.png" alt="Health Logo">
+                <h2>Virtual Mind</h2>
+            </div>
+
+            <div class="about-middle">
+                <h3>About us</h3>
+                <p>
+                    We are a team dedicated to improving overall health through technology. Our goal is to provide a safe space for users to reflect and grow.
+                </p>
+            </div>
+
+            <div class="about-right">
+                <h3><p>Do you have a problem?</p></h3>
+                <p>Call us: +12345678910</p>
+                <p>Email: <a href="mailto:mentalcare@example.com">mentalcare@example.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        function viewState() {
+            const entryText = document.getElementById("entry").value;
+            if (!entryText) {
+                alert("Please enter your thoughts first.");
+                return;
+            }
+
+            const encodedText = encodeURIComponent(entryText);
+            const url = `http://localhost:8501/?entry=${encodedText}`;
+            window.open(url, "_blank");
+        }
+
+        function viewAnalysis() {
+            const url = `http://localhost:8501/?tab=monitor`;
+            window.open(url, "_blank");
+        }
+
+        flatpickr("#journal-date", {
+            dateFormat: "Y-m-d",
+            defaultDate: "today",
+            inline: true,
+            onChange: function(selectedDates, dateStr, instance) {
+                document.getElementById("datetime").textContent = "Selected Date: " + dateStr;
+            }
+        });
+
+        window.addEventListener("DOMContentLoaded", function () {
+            const today = new Date().toISOString().split("T")[0];
+            document.getElementById("datetime").textContent = "Selected Date: " + today;
+        });
+
+        const quotes = [
+            "Your feelings are valid. Take your time. 💚",
+            "Mental health is just as important as physical health.",
+            "It’s okay to not be okay. You’re doing your best.",
+            "Write freely — no judgment, just reflection.",
+            "You’ve made it this far. Keep going!"
+        ];
+
+        let index = 0;
+
+        function changeQuote() {
+            const quoteDiv = document.getElementById("quoteMessage");
+            quoteDiv.style.opacity = 0;
+            setTimeout(() => {
+                quoteDiv.textContent = quotes[index];
+                quoteDiv.style.opacity = 1;
+                index = (index + 1) % quotes.length;
+            }, 500);
+        }
+
+        window.onload = changeQuote;
+        setInterval(changeQuote, 10000);
+    </script>
+</body>
+</html>
