@@ -65,7 +65,7 @@
 ---
 ### 👩‍💻 Project Team
 - 👤 **[Amira Salah(Amira-Ramon)]**
-- 👤 **[Raghad Hassona()]**
+- 👤 **[Raghad Hassona(Joo-i)]**
 - 👤 **[Rodina Hamza(Rodina-710)]**
 - 👤 **[Menna Selim(MeN1na)]**
 
