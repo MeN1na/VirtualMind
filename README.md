@@ -64,10 +64,10 @@
 
 ---
 ### 👩‍💻 Project Team
-👤 **[Amira Salah(Amira-Ramon)]**
-👤 **[Raghad Hassona()]**
-👤 **[Rodina Hamza(Rodina-710)]**
-👤 **[Menna Selim(MeN1na)]**
+- 👤 **[Amira Salah(Amira-Ramon)]**
+- 👤 **[Raghad Hassona()]**
+- 👤 **[Rodina Hamza(Rodina-710)]**
+- 👤 **[Menna Selim(MeN1na)]**
 
 - Want to contribute? Feel free to fork the repo and submit a pull request! ❤️
 ---
